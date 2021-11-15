@@ -1,0 +1,120 @@
+@import 'colors';
+
+#App {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background: $blue;
+
+  width: 100vw;
+  height: 70px;
+  z-index: 10;
+
+  #lab-name {
+    flex: 2;
+    text-decoration: none;
+
+    h1 {
+      justify-self: start;
+      font-size: 36px;
+      margin-top: 0.5rem;
+      color: white;
+      padding-left: 2rem;
+    }
+  }
+
+  section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+
+    margin: auto;
+    justify-content: space-evenly;
+
+    a {
+      margin: auto;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 30rem;
+
+  #intro-box {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(87, 188, 144);
+    background: linear-gradient(
+      0deg,
+      rgba(87, 188, 144, 1) 22%,
+      rgba(119, 201, 212, 1) 100%
+    );
+    justify-content: center;
+    align-items: center;
+
+    section {
+      font-size: 36px;
+
+      .span-1 {
+        animation: fadeIn linear 6s infinite;
+        animation-delay: 0s;
+        -webkit-animation: fadeIn linear 6s infinite;
+        -moz-animation: fadeIn linear 6s infinite;
+        -o-animation: fadeIn linear 6s infinite;
+        -ms-animation: fadeIn linear 6s infinite;
+      }
+
+      .span-2 {
+        animation: fadeIn linear 7s infinite;
+        animation-delay: 0s;
+        -webkit-animation: fadeIn linear 7s infinite;
+        -moz-animation: fadeIn linear 7s infinite;
+        -o-animation: fadeIn linear 7s infinite;
+        -ms-animation: fadeIn linear 7s infinite;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+
+  #second-box {
+    // display: flex;
+    width: 100vw;
+    height: 50vh;
+    // flex: 1 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 21%,
+      rgba(87, 188, 144, 1) 100%
+    );
+
+    section {
+      margin: 100px;
+    }
+  }
+}
