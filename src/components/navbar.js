@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+//import { BrowserRouter as Router, Link } from 'react-router-dom';
 //import { FaBars } from 'react-icons/fa';
 import '../styles/style.scss';
 
 const Navbar = () => {
-  const [researchDrop, SetResearchDrop] = useState('false');
+  // const [researchDrop, SetResearchDrop] = useState('false');
 
-  const researchMenu = () => {
-    return (
-      <div>
-        <a>Super Resolution Microscopy</a>
-        <a></a>
-        <a></a>
-        <a></a>
-      </div>
-    );
-  };
+  // const researchMenu = () => {
+  //   return (
+  //     <div>
+  //       <a>Super Resolution Microscopy</a>
+  //       <a></a>
+  //       <a></a>
+  //       <a></a>
+  //     </div>
+  //   );
+  // };
 
   return (
     <nav id={'navbar'}>
@@ -23,7 +23,7 @@ const Navbar = () => {
         <h1> Ryan Lab </h1>
       </a>
       <section id={'nav-links'}>
-        <a>
+        <a href='https://sites.google.com/site/ryanlab1/Home'>
           <h3>Research</h3>
           {/* {researchDrop ? researchMenu : null} */}
         </a>
