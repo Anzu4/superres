@@ -83,6 +83,22 @@
         -o-animation: fadeIn linear 7s infinite;
         -ms-animation: fadeIn linear 7s infinite;
       }
+      .span-3 {
+        animation: fadeIn linear 8s infinite;
+        animation-delay: 0s;
+        -webkit-animation: fadeIn linear 8s infinite;
+        -moz-animation: fadeIn linear 8s infinite;
+        -o-animation: fadeIn linear 8s infinite;
+        -ms-animation: fadeIn linear 8s infinite;
+      }
+      .span-4 {
+        animation: fadeIn linear 9s infinite;
+        animation-delay: 0s;
+        -webkit-animation: fadeIn linear 9s infinite;
+        -moz-animation: fadeIn linear 9s infinite;
+        -o-animation: fadeIn linear 9s infinite;
+        -ms-animation: fadeIn linear 9s infinite;
+      }
 
       @keyframes fadeIn {
         0% {
@@ -99,13 +115,9 @@
   }
 
   #second-box {
-    // display: flex;
     width: 100vw;
-    height: 50vh;
-    // flex: 1 100vw;
+    height: 100vh;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     background: rgb(255, 255, 255);
     background: linear-gradient(
       0deg,
@@ -114,7 +126,17 @@
     );
 
     section {
-      margin: 100px;
+      margin-top: 15rem;
+      margin-left: 100px;
+      margin-right: 100px;
+      h1 {
+        font-size: 36px;
+      }
     }
+  }
+
+  #third-box {
+    width: 100vw;
+    text-align: center;
   }
 }

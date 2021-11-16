@@ -1,4 +1,5 @@
 import React from 'react';
+import { Three } from '.';
 import '../styles/style.scss';
 
 export default function MainPage() {
@@ -7,16 +8,27 @@ export default function MainPage() {
       {/* Splash page area. Sinple headliner of what this page is about. */}
       <div id={'intro-box'}>
         <section>
-          <span className={'span-1'}>Lorem</span> ipsum{' '}
-          <span className={'span-2'}>dolor</span> sit {}
-          <span className={'span-1'}>amet</span>, consectetur {}
-          <span className={'span-2'}>adipiscing</span> elit.
+          <span className={'span-1'}></span>
+          <span className={'span-2'}></span>
+          <span className={'span-3'}></span>
+          <span className={'span-4'}></span>
+          <span className={'span-2'}></span>
+          <span className={'span-3'}></span>
+          Pres<span className={'span-4'}>y</span>napt
+          <span className={'span-4'}>i</span>c M
+          <span className={'span-1'}>o</span>lecul
+          <span className={'span-3'}>a</span>r Carto
+          <span className={'span-2'}>g</span>rap
+          <span className={'span-1'}>h</span>y at Na
+          <span className={'span-2'}>n</span>oscale{' '}
+          <span className={'span-3'}>R</span>esolu
+          <span className={'span-1'}>t</span>ion
         </section>
       </div>
       {/* More detail can go here. A few paragraphs expanding on the first section */}
       <div id={'second-box'}>
-        <h1>Section Header</h1>
         <section>
+          <h1>Section Header</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
             bibendum massa. Proin sagittis augue sed lectus pellentesque gravida
@@ -55,8 +67,12 @@ export default function MainPage() {
           </p>
         </section>
       </div>
+      {/* Final section. Might include links to relevent info? */}
       <div id={'third-box'}>
-        
+        <section>
+          <h1>Section Header</h1>
+          <Three />
+        </section>
       </div>
     </div>
   );
