@@ -67,12 +67,12 @@
       font-size: 36px;
 
       .span-1 {
-        animation: fadeIn linear 6s infinite;
+        animation: hl linear 6s infinite;
         animation-delay: 0s;
-        -webkit-animation: fadeIn linear 6s infinite;
-        -moz-animation: fadeIn linear 6s infinite;
-        -o-animation: fadeIn linear 6s infinite;
-        -ms-animation: fadeIn linear 6s infinite;
+        -webkit-animation: hl linear 6s infinite;
+        -moz-animation: hl linear 6s infinite;
+        -o-animation: hl linear 6s infinite;
+        -ms-animation: hl linear 6s infinite;
       }
 
       .span-2 {
@@ -109,6 +109,15 @@
         }
         100% {
           opacity: 0.1;
+        }
+      }
+
+      @keyframes hl {
+        0% {
+          color: black;
+        }
+        50% {
+          color: yellow;
         }
       }
     }
