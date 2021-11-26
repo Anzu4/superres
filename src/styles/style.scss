@@ -1,8 +1,7 @@
 @import 'colors';
 
 #App {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
 }
 
 #navbar {
@@ -66,6 +65,7 @@
     section {
       font-size: 36px;
 
+      // letters fade from black to yellow with neon glow
       .span-1 {
         animation: hl linear 6s infinite;
         animation-delay: 0s;
@@ -75,6 +75,7 @@
         -ms-animation: hl linear 6s infinite;
       }
 
+      // Letters fade in and out from 10% - 100% opacity
       .span-2 {
         animation: fadeIn linear 7s infinite;
         animation-delay: 0s;
@@ -83,6 +84,8 @@
         -o-animation: fadeIn linear 7s infinite;
         -ms-animation: fadeIn linear 7s infinite;
       }
+
+      // Letters fade in and out from 10% - 100% opacity
       .span-3 {
         animation: fadeIn linear 8s infinite;
         animation-delay: 0s;
@@ -91,6 +94,8 @@
         -o-animation: fadeIn linear 8s infinite;
         -ms-animation: fadeIn linear 8s infinite;
       }
+
+      // Letters fade in and out from 10% - 100% opacity
       .span-4 {
         animation: fadeIn linear 9s infinite;
         animation-delay: 0s;
@@ -135,17 +140,78 @@
     );
 
     section {
+      //margin: 15rem 3rem inherit 3rem;
       margin-top: 15rem;
       margin-left: 100px;
       margin-right: 100px;
       h1 {
-        font-size: 36px;
+        font-size: 42px;
+      }
+      p {
+        //margin: 15rem 3rem inherit 3rem;
+        font-size: 30px;
       }
     }
   }
 
   #third-box {
+    margin: 15rem 3rem 3rem 3rem;
     width: 100vw;
     text-align: center;
+
+    section {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
+        minmax(0, 1fr);
+      grid-template-rows: 5rem;
+      grid-auto-rows: 400px;
+      overflow: hidden;
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      // Image on the left, info on the right
+      .img-left {
+        background-color: $green;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .info-right {
+        background-color: $grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        border: $dark-grey 2px solid;
+      }
+
+      // image on the right, info on the left
+      .info-left {
+        background-color: $grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .img-right {
+        background-color: $green;
+        grid-column-start: 4;
+        grid-column-end: 6;
+      }
+      #vGlut {
+        background: url('../images/vGlut.jpg');
+        background-size: cover;
+      }
+      #sunrise {
+        background: url('../images/sunrise.jpg');
+        background-size: cover;
+      }
+    }
   }
 }
